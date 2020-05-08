@@ -465,9 +465,10 @@ endif()
 
 # JPEG
 option(jpeg "use libjpeg (required for JPEG compression)" ON)
-if (jpeg)
-  find_package(JPEGTurbo QUIET)
-endif()
+#force use embeded jpeg
+# if (jpeg)
+#   find_package(JPEGTurbo QUIET)
+# endif()
 set(JPEG_SUPPORT FALSE)
 if(JPEG_FOUND)
   set(JPEG_SUPPORT TRUE)
