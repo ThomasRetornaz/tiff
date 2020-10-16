@@ -129,7 +129,6 @@ main(int argc, char* argv[])
 				if (!tiffcvt(in, out) ||
 				    !TIFFWriteDirectory(out)) {
 					(void) TIFFClose(out);
-					(void) TIFFClose(in);
 					return (1);
 				}
 			} while (TIFFReadDirectory(in));

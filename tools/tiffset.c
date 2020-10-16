@@ -35,10 +35,6 @@
 
 #include "tiffio.h"
 
-#ifdef NEED_LIBPORT
-# include "libport.h"
-#endif
-
 static char* usageMsg[] = {
 "usage: tiffset [options] filename",
 "where options are:",
